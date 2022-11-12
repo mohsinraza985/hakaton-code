@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Student Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: skyblue">
+	<CENTER><h2>STUDENT REGISTRATION</h2></CENTER>
+    
+    <table>
+        <tr> 
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>Student Details</h3>
+                    <div>
+                        <label>Full Name</label>
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter the user Name">
+                    </div>
+                    <div>
+                        <label>Father's Name</label>
+                        <label class="validation-error hide" id="fatherNamevalidationError">This field is required</label>
+                        <input type="text" name="fatherName" id="fatherName" placeholder="Enter the father Name">
+                    </div>
+                    <div>
+                        <label>Rollno</label>
+                        <label class="validation-error hide" id="rollNovalidationError" >This field is required</label>
+                        <input type="text" name="rollNo" id="rollNo" placeholder="Enter the Roll number">
+                    </div>
+                    <div>
+                        <label>Student Class</label>
+                
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                       
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the Student Class">
+                    </div>
+                    <div>
+                        <label>CNIC NUMBER</label>
+                        <label class="validation-error hide" id="tsubvalidationError">This field is required</label>
+                        <input type="cnic number" name="cnic" id="cnic" placeholder="Enter your your CNIC NUMBER">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <input type="number" name="age" id="age" placeholder="Enter the Age">
+                    </div>
+                    <div>
+                        <label>picture</label>
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Father Name</th>
+                            <th> Roll no</th>
+                            <th>Class</th>
+                            <th>Total Subject</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <script src="app.js"></script>
+                    <tbody>
+</html>
